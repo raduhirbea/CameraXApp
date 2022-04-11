@@ -16,29 +16,45 @@
         android:id="@+id/image_capture_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="50dp"
         android:layout_marginEnd="50dp"
-        android:scaleType="fitCenter"
-        android:elevation="2dp"
-        app:srcCompat="@drawable/ic_baseline_photo_camera_24"
+        android:layout_marginBottom="50dp"
         android:background="@null"
+        android:elevation="2dp"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:scaleType="fitCenter"
         android:text="@string/take_photo"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/vertical_centerline"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/vertical_centerline" />
+        app:srcCompat="@drawable/ic_baseline_photo_camera_24" />
 
     <ImageButton
         android:id="@+id/video_capture_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="50dp"
         android:layout_marginStart="50dp"
-        android:elevation="2dp"
-        app:srcCompat="@drawable/ic_baseline_videocam_24"
+        android:layout_marginBottom="50dp"
         android:background="@null"
+        android:elevation="2dp"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@id/vertical_centerline" />
+        app:layout_constraintStart_toEndOf="@id/vertical_centerline"
+        app:srcCompat="@drawable/ic_baseline_videocam_24" />
+
+    <ImageView
+        android:id="@+id/record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="50dp"
+        android:src="@android:drawable/ic_notification_overlay"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/vertical_centerline"

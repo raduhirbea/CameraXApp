@@ -23,6 +23,7 @@ import android.provider.MediaStore
 
 import android.content.ContentValues
 import android.os.Build
+import androidx.core.view.isVisible
 
 typealias LumaListener = (luma: Double) -> Unit
 
@@ -107,6 +108,7 @@ class MainActivity : AppCompatActivity() {
         val videoCapture = this.videoCapture ?: return
 
         viewBinding.videoCaptureButton.isEnabled = false
+        viewBinding.record.isVisible = true
 
         val curRecording = recording
         if (curRecording != null) {
@@ -166,6 +168,7 @@ class MainActivity : AppCompatActivity() {
 //                            text = getString(R.string.start_capture)
                             isEnabled = true
                         }
+                        viewBinding.record.isVisible = false
                     }
                 }
             }
