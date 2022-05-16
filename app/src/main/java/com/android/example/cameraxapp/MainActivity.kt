@@ -149,6 +149,7 @@ class MainActivity : AppCompatActivity() {
                         viewBinding.videoCaptureButton.apply {
 //                            text = getString(R.string.stop_capture)
                             isEnabled = true
+                            viewBinding.record.isVisible = true
                         }
                     }
                     is VideoRecordEvent.Finalize -> {

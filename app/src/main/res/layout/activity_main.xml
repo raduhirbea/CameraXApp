@@ -51,7 +51,7 @@
         android:scaleType="fitCenter"
         android:layout_marginTop="50dp"
         android:src="@android:drawable/ic_notification_overlay"
-        android:visibility="invisible"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
